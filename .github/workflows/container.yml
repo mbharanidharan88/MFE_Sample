@@ -25,6 +25,7 @@ jobs:
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
+            source_dir: _container/dist
             tag_name: test
             release_name: Release ${{ github.ref }}
             draft: false
